@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #fffaf5;
+    color: #35213f;
+}
+
+/* HEADER */
+
+header {
+    background: #32103f;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    display: block;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #d9b5e8;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e2b6f5;
+}
+
+/* HOMEPAGE BACKGROUND */
+
+.hero {
+    min-height: 650px;
+    background:
+        linear-gradient(rgba(35, 10, 43, 0.55), rgba(35, 10, 43, 0.65)),
+        url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1800")
+        center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content p:first-child {
+    color: #e4b9f5;
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero-content p:nth-of-type(2) {
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 550px;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    background: #9254a5;
+    color: white;
+    padding: 16px 30px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #6c3483;
+    transform: translateY(-3px);
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+}
