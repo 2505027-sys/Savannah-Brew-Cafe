@@ -188,7 +188,30 @@ nav a:hover {
     display: inline-block;
     color: #81439b;
     text-decoration: none;
-    font-weight: bold;  
-}
+    font-weight: bold;
     margin-top: 10px;
+    }
+/* WELCOME SECTION - MOBILE */
+
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+        padding: 60px 7%;
+        gap: 30px;
+    }
+
+    .welcome-image img {
+        height: 300px;
+    }
+
+    .welcome-text h2 {
+        font-size: 32px;
+    }
 }
+
+
+
+
+
+
+
