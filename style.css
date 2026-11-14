@@ -286,3 +286,52 @@ nav a:hover {
         font-size: 32px;
     }
 }
+/* WHY CHOOSE US SECTION */
+
+.why-us {
+    padding: 90px 10%;
+    background: #fffaf5;
+    text-align: center;
+}
+
+.why-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.why-card {
+    flex: 1;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(50, 16, 63, 0.08);
+}
+
+.why-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.why-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #32103f;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    color: #766a7b;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .why-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+}
