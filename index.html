@@ -4,150 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Savanna Brew Café</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-    <div class="logo">SAVANNA BREW <span>CAFÉ</span></div>
+
+<header class="cafe-header">
+
+    <div class="logo">
+        ☕ SAVANNA BREW <span>CAFÉ</span>
+    </div>
 
     <nav>
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About Us</a>
-        <a href="menu.html">Our Menu</a>
+        <a href="menu.html">Menu</a>
         <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Contact</a>
     </nav>
+
 </header>
-
 <section class="hero">
+
     <div class="hero-content">
-        <p>WELCOME TO SAVANNA BREW CAFÉ</p>
-        <h1>Every Cup Tells<br>A Beautiful Story.</h1>
-        <p>Experience freshly brewed Kenyan coffee, delicious treats and warm hospitality in the heart of Westlands.</p>
 
-        <a href="menu.html" class="button">EXPLORE OUR MENU</a>
+        <p class="hero-subtitle">WELCOME TO SAVANNA BREW</p>
+
+        <h1>Where Every Cup<br> Tells a Story.</h1>
+
+        <p>
+            Experience the perfect blend of freshly brewed Kenyan coffee,
+            delicious treats and warm hospitality.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="menu.html" class="btn">Explore Our Menu</a>
+            <a href="about.html" class="btn btn-outline">Our Story</a>
+        </div>
+
     </div>
-</section>
-<!-- WELCOME SECTION -->
 
+</section>    
 <section class="welcome">
 
-    <div class="welcome-image">
-        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800"
-             alt="Coffee being prepared at a café">
-    </div>
+    <div class="welcome-content">
 
-    <div class="welcome-text">
-        <span>OUR LITTLE CORNER</span>
+        <p class="section-subtitle">A TASTE OF KENYA</p>
 
-        <h2>A Place to Relax, Connect and Enjoy.</h2>
-
-        <p>
-            Welcome to Savanna Brew Café, a locally owned café in Westlands,
-            Nairobi. We bring people together through freshly brewed Kenyan
-            coffee and delicious homemade treats.
-        </p>
-
-        <p>
-            With coffee sourced from Nyeri and Kiambu, every cup celebrates
-            the richness of Kenya.
-        </p>
-
-        <a href="about.html">DISCOVER OUR STORY →</a>
-    </div>
-
-</section>
-<!-- FEATURED FAVOURITES -->
-
-<section class="favourites">
-    <div class="section-heading">
-        <span>MADE WITH LOVE</span>
-        <h2>Our Café Favourites</h2>
-        <p>A little taste of what makes Savanna Brew special.</p>
-    </div>
-
-    <div class="favourite-container">
-
-        <div class="favourite-card">
-            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600"
-                 alt="Freshly brewed coffee">
-            <h3>Kenyan Coffee</h3>
-            <p>Rich, freshly brewed coffee sourced from local Kenyan farms.</p>
-            <strong>KES 350</strong>
-        </div>
-
-        <div class="favourite-card">
-            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
-                 alt="Chocolate cake">
-            <h3>Chocolate Cake</h3>
-            <p>Delicious chocolate cake, freshly prepared for your enjoyment.</p>
-            <strong>KES 450</strong>
-        </div>
-
-        <div class="favourite-card">
-            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600"
-                 alt="Fresh croissants">
-            <h3>Fresh Croissants</h3>
-            <p>Golden, buttery pastries baked fresh every day.</p>
-            <strong>KES 250</strong>
-        </div>
-
-    </div>
-</section>
-<!-- WHY CHOOSE US -->
-
-<section class="why-us">
-    <div class="section-heading">
-        <span>THE SAVANNA EXPERIENCE</span>
         <h2>More Than Just Coffee</h2>
-        <p>Every visit is made special with a little extra care.</p>
-    </div>
 
-    <div class="why-container">
+        <p>
+            At Savanna Brew Café, we believe every moment deserves
+            something special. From carefully selected coffee beans
+            sourced from Nyeri and Kiambu to freshly baked pastries,
+            we bring you warmth and flavour in every visit.
+        </p>
 
-        <div class="why-card">
-            <div class="why-icon">☕</div>
-            <h3>Kenyan Coffee</h3>
-            <p>Enjoy quality coffee sourced from farms in Nyeri and Kiambu.</p>
-        </div>
-
-        <div class="why-card">
-            <div class="why-icon">🥐</div>
-            <h3>Freshly Baked</h3>
-            <p>Enjoy delicious pastries and treats prepared fresh every day.</p>
-        </div>
-
-        <div class="why-card">
-            <div class="why-icon">💜</div>
-            <h3>Warm Hospitality</h3>
-            <p>A welcoming space where friends and families feel at home.</p>
-        </div>
+        <a href="about.html" class="text-link">Discover Our Story →</a>
 
     </div>
+
 </section>
-<!-- FOOTER -->
+<section class="featured-menu">
 
-<footer class="footer">
+    <div class="section-heading">
+        <p class="section-subtitle">OUR SPECIALTIES</p>
+        <h2>Customer Favourites</h2>
+        <p>Freshly prepared, beautifully served and made with love.</p>
+    </div>
+
+    <div class="menu-container">
+
+        <div class="menu-card">
+            <img src="coffee.jpg" alt="Fresh Kenyan Coffee">
+            <h3>Kenyan Coffee</h3>
+            <p>Rich, smooth and freshly brewed coffee.</p>
+            <span>KES 250</span>
+        </div>
+
+        <div class="menu-card">
+            <img src="croissant.png" alt="Fresh Croissant">
+            <h3>Butter Croissant</h3>
+            <p>Freshly baked, golden and delicious.</p>
+            <span>KES 180</span>
+        </div>
+
+        <div class="menu-card">
+            <img src="chocolate cake.png" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p>A delicious slice of rich chocolate goodness.</p>
+            <span>KES 350</span>
+        </div>
+
+    </div>
+
+    <div class="menu-button">
+        <a href="menu.html" class="btn">View Full Menu</a>
+    </div>
+
+</section>
+  <section class="experience">
+
+    <div class="experience-content">
+
+        <p class="section-subtitle">THE SAVANNA EXPERIENCE</p>
+
+        <h2>Your Perfect Coffee Moment Awaits</h2>
+
+        <p>
+            Whether you're meeting friends, enjoying a quiet afternoon
+            or catching up on work, Savanna Brew Café is the perfect
+            place to relax, connect and enjoy something delicious.
+        </p>
+
+        <a href="contact.html" class="btn">Visit Our Café</a>
+
+    </div>
+
+</section>
+    <section class="why-choose-us">
+
+    <div class="section-heading">
+        <p class="section-subtitle">WHY SAVANNA BREW?</p>
+        <h2>What Makes Us Special</h2>
+    </div>
+
+    <div class="features-container">
+
+        <div class="feature-card">
+            <h3>☕ Fresh Kenyan Coffee</h3>
+            <p>We use carefully selected coffee beans from Nyeri and Kiambu.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🥐 Freshly Baked Treats</h3>
+            <p>Enjoy delicious pastries and snacks prepared with care.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>💜 Warm Hospitality</h3>
+            <p>We create a welcoming space where everyone feels at home.</p>
+        </div>
+
+    </div>
+
+</section>
+    <section class="booking">
+
+    <div class="booking-content">
+
+        <p class="section-subtitle">MAKE IT A SPECIAL MOMENT</p>
+
+        <h2>Save a Seat at Our Table</h2>
+
+        <p>
+            Planning a coffee date, a family outing or a meeting
+            with friends? Reserve your table and let us make
+            your experience memorable.
+        </p>
+
+        <a href="contact.html" class="btn">Book a Table</a>
+
+    </div>
+
+</section>
+    <footer class="footer">
+
     <div class="footer-content">
 
-        <div>
-            <h2>SAVANNA BREW CAFÉ</h2>
-            <p>Every cup tells a beautiful story.</p>
+        <div class="footer-about">
+            <h2>SAVANNA BREW <span>CAFÉ</span></h2>
+            <p>Where every cup tells a story.</p>
+            <p>Bringing you the best of Kenyan coffee and hospitality.</p>
         </div>
 
-        <div>
+        <div class="footer-links">
             <h3>Quick Links</h3>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
-            <a href="menu.html">Our Menu</a>
+            <a href="menu.html">Menu</a>
             <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html">Contact</a>
         </div>
 
-        <div>
+        <div class="footer-contact">
             <h3>Visit Us</h3>
             <p>Westlands, Nairobi, Kenya</p>
-            <p>Fresh coffee. Fresh moments.</p>
+            <p>Fresh Coffee. Beautiful Moments.</p>
         </div>
 
     </div>
@@ -155,11 +199,11 @@
     <div class="footer-bottom">
         <p>&copy; 2026 Savanna Brew Café. All Rights Reserved.</p>
     </div>
-</footer>    
+
+</footer>
+
 </body>
 </html>
-
-
 
 
 
