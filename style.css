@@ -107,22 +107,22 @@ nav a.active {
 /* HERO SECTION */
 
 .hero {
-    min-height: 680px;
+    min-height: 720px;
     display: flex;
     align-items: center;
     padding: 100px 8%;
+    position: relative;
 
     background:
         linear-gradient(
             90deg,
-            rgba(35, 15, 48, 0.85),
-            rgba(35, 15, 48, 0.35)
+            rgba(35, 15, 48, 0.88),
+            rgba(35, 15, 48, 0.30)
         ),
-     url('dao-vi-t-hoang-ETB3upjJttc-unsplash.jpg') center/cover no-repeat; 
+        url('dao-vi-t-hoang-ETB3upjJttc-unsplash.jpg') center/cover no-repeat;
 
     color: white;
 }
-
 .hero-content {
     max-width: 700px;
 }
