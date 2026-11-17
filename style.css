@@ -1,439 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'DM Sans', sans-serif;
-    background: #fffaf5;
-    color: #35213f;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* HEADER */
-
-.cafe-header {
-    padding: 20px 7%;
-    background: #432653;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-family: 'Playfair Display', serif;
-    color: white;
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.logo span {
-    color: #e6c6f2;
-}
-
-nav {
-    display: flex;
-    gap: 25px;
-}
-
-nav a {
-    color: white;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-nav a:hover,
-nav a.active {
-    color: #e6c6f2;
-}
-
-/* HERO */
-
-.hero {
-    min-height: 470px;
-    padding: 70px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background:
-        linear-gradient(rgba(40,20,50,.65), rgba(40,20,50,.65)),
-        url("croissant.pn.png") center/cover no-repeat;
-}
-
-.hero-content {
-    max-width: 800px;
-}
-
-.hero-subtitle {
-    color: #e6c6f2;
-    letter-spacing: 3px;
-    font-weight: 700;
-    font-size: 13px;
-}
-
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 55px;
-    margin: 15px 0;
-}
-
-.hero p {
-    font-size: 17px;
-}
-
-/* BUTTONS */
-
-.btn {
-    display: inline-block;
-    background: #74458a;
-    color: white;
-    padding: 13px 28px;
-    border-radius: 30px;
-    margin-top: 20px;
-    font-weight: 600;
-    transition: .3s;
-}
-
-.btn:hover {
-    background: #432653;
-}
-
-/* SECTION HEADINGS */
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-heading h2 {
-    font-family: 'Playfair Display', serif;
-    color: #432653;
-    font-size: 36px;
-    margin: 10px 0;
-}
-
-.section-heading p {
-    color: #705d78;
-}
-
-/* WELCOME */
-
-.welcome {
-    padding: 80px 10%;
-    text-align: center;
-}
-
-.welcome h2 {
-    font-family: 'Playfair Display', serif;
-    color: #432653;
-    font-size: 38px;
-    margin-bottom: 20px;
-}
-
-.welcome p {
-    max-width: 850px;
-    margin: 0 auto 15px;
-    color: #65536b;
-}
-
-/* MENU */
-
-.featured-menu {
-    padding: 80px 8%;
-    background: #f5edf7;
-}
-
-.menu-container {
-    max-width: 1150px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.menu-card {
-    background: white;
-    text-align: center;
-    border-radius: 15px;
-    overflow: hidden;
-    padding-bottom: 25px;
-    box-shadow: 0 5px 20px rgba(60,30,70,.08);
-}
-
-.menu-card img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-}
-
-.menu-card h3 {
-    color: #432653;
-    font-family: 'Playfair Display', serif;
-    font-size: 23px;
-    margin: 18px 10px 8px;
-}
-
-.menu-card p {
-    color: #705d78;
-    padding: 0 15px;
-}
-
-.menu-card strong {
-    display: block;
-    color: #74458a;
-    font-size: 20px;
-    margin-top: 12px;
-}
-
-/* EXPERIENCE */
-
-.experience {
-    padding: 90px 10%;
-    text-align: center;
-    color: white;
-    background:
-        linear-gradient(rgba(48,25,58,.75), rgba(48,25,58,.75)),
-        url("croissant.pn.png") center/cover no-repeat;
-}
-
-.experience h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 38px;
-    margin-bottom: 15px;
-}
-
-/* FEATURES */
-
-.why-choose-us {
-    padding: 80px 8%;
-    text-align: center;
-}
-
-.why-choose-us h2 {
-    font-family: 'Playfair Display', serif;
-    color: #432653;
-    font-size: 36px;
-    margin-bottom: 35px;
-}
-
-.features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.feature-card {
-    background: #f5edf7;
-    padding: 30px;
-    border-radius: 15px;
-}
-
-.feature-card h3 {
-    color: #432653;
-    margin-bottom: 12px;
-}
-
-/* BOOKING */
-
-.booking {
-    padding: 75px 8%;
-    background: #432653;
-    text-align: center;
-    color: white;
-}
-
-.booking h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-}
-
-/* ABOUT */
-
-.about-content {
-    max-width: 1100px;
-    margin: auto;
-    padding: 70px 8%;
-}
-
-.about-content h2 {
-    font-family: 'Playfair Display', serif;
-    color: #432653;
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-.about-content p {
-    color: #65536b;
-    margin-bottom: 25px;
-}
-
-/* GALLERY */
-
-.gallery-section {
-    padding: 80px 8%;
-}
-
-.gallery-grid {
-    max-width: 1150px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.gallery-item {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(60,30,70,.08);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    display: block;
-}
-
-.gallery-item h3 {
-    padding: 15px;
-    text-align: center;
-    color: #432653;
-    font-family: 'Playfair Display', serif;
-}
-
-/* CONTACT */
-
-.contact-section {
-    padding: 80px 8%;
-}
-
-.contact-container {
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
-    gap: 35px;
-}
-
-.contact-details,
-.booking-form {
-    background: #f1e7f5;
-    padding: 35px;
-    border-radius: 15px;
-}
-
-.contact-details h3,
-.booking-form h3 {
-    font-family: 'Playfair Display', serif;
-    color: #432653;
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.contact-details p {
-    color: #594663;
-    margin-bottom: 15px;
-}
-
-.booking-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.booking-form label {
-    color: #432653;
-    font-weight: 600;
-}
-
-.booking-form input,
-.booking-form select,
-.booking-form textarea {
-    width: 100%;
-    padding: 13px;
-    border: 1px solid #d3b8df;
-    border-radius: 8px;
-    background: white;
-    font: inherit;
-}
-
-.booking-form .btn {
-    border: none;
-    cursor: pointer;
-}
-
-/* FOOTER */
-
-.footer {
-    background: #281633;
-    color: white;
-    text-align: center;
-    padding: 40px 8%;
-}
-
-.footer h2 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 12px;
-}
-
-.footer p {
-    color: #d9c9e0;
-    margin-bottom: 8px;
-    font-size: 14px;
-}
-
-/* RESPONSIVE DESIGN */
-
-@media (max-width: 900px) {
-    .cafe-header {
-        flex-direction: column;
-        gap: 18px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .menu-container,
-    .gallery-grid,
-    .features {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .hero h1 {
-        font-size: 38px;
-    }
-
-    .menu-container,
-    .gallery-grid,
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    .welcome h2,
-    .section-heading h2 {
-        font-size: 30px;
-    }
-}
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Savanna Brew Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="cafe-header">
+    <div class="logo">SAVANNA BREW <span>CAFÉ</span></div>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="hero-subtitle">WELCOME TO SAVANNA BREW CAFÉ</p>
+        <h1>A Taste of Kenya in Every Cup</h1>
+        <p>Freshly brewed coffee, delicious treats and warm moments in the heart of Westlands.</p>
+        <a href="menu.html" class="btn">Explore Our Menu</a>
+    </div>
+</section>
+
+<section class="welcome">
+    <p class="hero-subtitle">OUR LITTLE CORNER OF HAPPINESS</p>
+    <h2>Welcome to Savanna Brew Café</h2>
+
+    <p>
+        Savanna Brew Café is a locally owned café located in Westlands, Nairobi.
+        We are passionate about serving quality coffee made from carefully
+        selected Kenyan coffee beans sourced from Nyeri and Kiambu.
+    </p>
+
+    <p>
+        Whether you are meeting friends, taking a break or enjoying a quiet
+        moment, we offer a comfortable place to relax and enjoy freshly prepared treats.
+    </p>
+
+    <a href="about.html" class="btn">Discover Our Story</a>
+</section>
+
+<section class="featured-menu">
+
+    <div class="section-heading">
+        <p class="hero-subtitle">FRESHLY PREPARED</p>
+        <h2>Our Popular Treats</h2>
+        <p>Enjoy some of our café favourites.</p>
+    </div>
+
+    <div class="menu-container">
+
+        <div class="menu-card">
+            <img src="coffe.jpg.jpg" alt="Freshly prepared coffee">
+            <h3>Classic Coffee</h3>
+            <p>Rich, freshly brewed Kenyan coffee.</p>
+            <strong>KES 250</strong>
+        </div>
+
+        <div class="menu-card">
+            <img src="chocolatecake.png.png" alt="Fresh chocolate cake">
+            <h3>Chocolate Cake</h3>
+            <p>Soft, delicious chocolate cake.</p>
+            <strong>KES 350</strong>
+        </div>
+
+        <div class="menu-card">
+            <img src="croissant.pn.png" alt="Freshly baked croissant">
+            <h3>Fresh Croissant</h3>
+            <p>A golden, flaky baked treat.</p>
+            <strong>KES 200</strong>
+        </div>
+
+    </div>
+
+    <div style="text-align:center;">
+        <a href="menu.html" class="btn">View Full Menu</a>
+    </div>
+
+</section>
+
+<section class="experience">
+    <p class="hero-subtitle">MORE THAN JUST COFFEE</p>
+    <h2>Good Coffee, Great Company</h2>
+    <p>
+        At Savanna Brew Café, every cup is prepared with care.
+        Come enjoy delicious flavours and a welcoming atmosphere.
+    </p>
+</section>
+
+<section class="why-choose-us">
+
+    <h2>Why Choose Savanna Brew?</h2>
+
+    <div class="features">
+
+        <div class="feature-card">
+            <h3>Kenyan Coffee</h3>
+            <p>We use quality coffee beans sourced from Nyeri and Kiambu.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Fresh Treats</h3>
+            <p>Enjoy freshly prepared coffee and delicious baked snacks.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Warm Atmosphere</h3>
+            <p>A comfortable place to relax, work and meet friends.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="booking">
+    <h2>Planning to Visit Us?</h2>
+    <p>Reserve a table and enjoy a lovely café experience.</p>
+    <a href="contact.html" class="btn">Book a Table</a>
+</section>
+
+<footer class="footer">
+    <h2>SAVANNA BREW CAFÉ</h2>
+    <p>Fresh coffee. Fresh moments. Warm memories.</p>
+    <p>Westlands, Nairobi, Kenya</p>
+    <p>&copy; 2026 Savanna Brew Café. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
