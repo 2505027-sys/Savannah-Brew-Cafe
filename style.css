@@ -32,11 +32,13 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 22px 8%;
-    background: #321b43;
+    background: rgba(50, 27, 67, 0.95);
+    backdrop-filter: blur(12px);
     color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .logo {
