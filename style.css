@@ -198,10 +198,12 @@ nav a.active {
 /* WELCOME SECTION */
 
 .welcome {
-    padding: 100px 12%;
+    padding: 120px 12%;
     text-align: center;
-    background: #fffaf5;
+    background: linear-gradient(180deg, #fffaf5, #f8effb);
+    position: relative;
 }
+
 
 .welcome-content {
     max-width: 850px;
@@ -258,12 +260,24 @@ nav a.active {
 
 .menu-card {
     background: white;
-    border-radius: 12px;
+    border-radius: 18px;
     overflow: hidden;
     text-align: center;
-    padding-bottom: 25px;
-    box-shadow: 0 5px 20px rgba(50, 27, 67, 0.08);
-    transition: 0.3s;
+    padding-bottom: 28px;
+    box-shadow: 0 8px 25px rgba(50, 27, 67, 0.10);
+    transition: all 0.4s ease;
+    border: 1px solid #f0e5f5;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(50, 27, 67, 0.18);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
 }
 
 .menu-card:hover {
