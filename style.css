@@ -43,9 +43,16 @@ img {
 
 .logo {
     font-family: 'Playfair Display', serif;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    letter-spacing: 3px;
 }
 
 .logo span {
