@@ -25,6 +25,7 @@ img {
     max-width: 100%;
     display: block;
 }
+
 /* HEADER */
 
 .cafe-header {
@@ -32,13 +33,13 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 22px 8%;
-    background: rgba(50, 27, 67, 0.95);
+    background: rgba(50, 27, 67, 0.96);
     backdrop-filter: blur(12px);
     color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
 }
 
 .logo {
@@ -46,20 +47,12 @@ img {
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: #ffffff;
-    text-transform: uppercase;
-    transition: 0.3s ease;
-}
-
-.logo:hover {
-    letter-spacing: 3px;
+    color: white;
 }
 
 .logo span {
     color: #d9b8f0;
 }
-
-/* NAVIGATION */
 
 nav {
     display: flex;
@@ -70,9 +63,8 @@ nav a {
     color: #f5edf8;
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: all 0.3s ease;
     position: relative;
+    transition: 0.3s;
 }
 
 nav a::after {
@@ -83,13 +75,7 @@ nav a::after {
     background: #d9b8f0;
     bottom: -7px;
     left: 0;
-    transition: width 0.3s ease;
-}
-
-nav a:hover::after,
-nav a.active::after {
-    width: 100%;
-}
+    transition: 0.3s;
 }
 
 nav a:hover,
@@ -97,13 +83,11 @@ nav a.active {
     color: #d9b8f0;
 }
 
-/* BUTTONS */
-
-.hero-buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
 }
+
 /* HERO SECTION */
 
 .hero {
@@ -111,8 +95,6 @@ nav a.active {
     display: flex;
     align-items: center;
     padding: 100px 8%;
-    position: relative;
-
     background:
         linear-gradient(
             90deg,
@@ -120,9 +102,9 @@ nav a.active {
             rgba(35, 15, 48, 0.30)
         ),
         url('dao-vi-t-hoang-ETB3upjJttc-unsplash.jpg') center/cover no-repeat;
-
     color: white;
 }
+
 .hero-content {
     max-width: 700px;
 }
@@ -140,11 +122,9 @@ nav a.active {
     font-family: 'Playfair Display', serif;
     font-size: 76px;
     line-height: 1.1;
-    font-weight: 700;
     margin-bottom: 25px;
     color: white;
-    letter-spacing: -1px;
-    text-shadow: 2px 4px 15px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 4px 15px rgba(0,0,0,0.3);
 }
 
 .hero-content > p:not(.hero-subtitle) {
@@ -169,20 +149,14 @@ nav a.active {
     color: white;
     border-radius: 40px;
     font-weight: 700;
-    letter-spacing: 0.5px;
-    box-shadow: 0 8px 20px rgba(80, 35, 100, 0.25);
+    box-shadow: 0 8px 20px rgba(80,35,100,0.25);
     transition: all 0.3s ease;
 }
 
 .btn:hover {
     background: linear-gradient(135deg, #71318d, #4c1e63);
     transform: translateY(-4px);
-    box-shadow: 0 12px 25px rgba(80, 35, 100, 0.35);
-}
-
-.btn:hover {
-    background: #602777;
-    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(80,35,100,0.35);
 }
 
 .btn-outline {
@@ -201,9 +175,7 @@ nav a.active {
     padding: 120px 12%;
     text-align: center;
     background: linear-gradient(180deg, #fffaf5, #f8effb);
-    position: relative;
 }
-
 
 .welcome-content {
     max-width: 850px;
@@ -236,10 +208,11 @@ nav a.active {
 .text-link:hover {
     color: #432653;
 }
+
 /* FEATURED MENU */
 
 .featured-menu {
-    padding: 90px 8%;
+    padding: 100px 8%;
     background: #f3eaf7;
 }
 
@@ -264,14 +237,14 @@ nav a.active {
     overflow: hidden;
     text-align: center;
     padding-bottom: 28px;
-    box-shadow: 0 8px 25px rgba(50, 27, 67, 0.10);
+    box-shadow: 0 8px 25px rgba(50,27,67,0.10);
     transition: all 0.4s ease;
     border: 1px solid #f0e5f5;
 }
 
 .menu-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(50, 27, 67, 0.18);
+    box-shadow: 0 15px 35px rgba(50,27,67,0.18);
 }
 
 .menu-card img {
@@ -280,32 +253,23 @@ nav a.active {
     object-fit: cover;
 }
 
-.menu-card:hover {
-    transform: translateY(-8px);
-}
-
-.menu-card img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-}
-
 .menu-card h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 23px;
-    margin: 20px 0 8px;
+    font-size: 25px;
+    margin: 22px 0 10px;
     color: #432653;
 }
 
 .menu-card p {
     color: #75677b;
-    padding: 0 15px;
-    margin-bottom: 15px;
+    padding: 0 20px;
+    margin-bottom: 18px;
+    font-size: 15px;
 }
 
 .menu-card span {
     color: #9255b1;
-    font-size: 19px;
+    font-size: 21px;
     font-weight: 700;
 }
 
@@ -313,15 +277,17 @@ nav a.active {
     text-align: center;
     margin-top: 45px;
 }
+
 /* EXPERIENCE SECTION */
 
 .experience {
-    padding: 110px 10%;
-    background: linear-gradient(
-        rgba(48, 25, 65, 0.88),
-        rgba(48, 25, 65, 0.88)
-    ),
-    url('croissant.png') center/cover no-repeat;
+    padding: 120px 10%;
+    background:
+        linear-gradient(
+            rgba(48,25,65,0.88),
+            rgba(48,25,65,0.88)
+        ),
+        url('croissant.png') center/cover no-repeat;
     text-align: center;
     color: white;
 }
@@ -342,13 +308,10 @@ nav a.active {
     font-size: 16px;
 }
 
-.experience .btn {
-    margin-top: 10px;
-}
 /* WHY CHOOSE US */
 
 .why-choose-us {
-    padding: 90px 8%;
+    padding: 100px 8%;
     background: #fffaf5;
 }
 
@@ -360,15 +323,15 @@ nav a.active {
 
 .feature-card {
     background: #f3eaf7;
-    padding: 35px 25px;
+    padding: 40px 25px;
     text-align: center;
-    border-radius: 12px;
+    border-radius: 16px;
     transition: 0.3s;
 }
 
 .feature-card:hover {
     transform: translateY(-7px);
-    box-shadow: 0 8px 20px rgba(50, 27, 67, 0.12);
+    box-shadow: 0 8px 20px rgba(50,27,67,0.12);
 }
 
 .feature-card h3 {
@@ -382,10 +345,11 @@ nav a.active {
     color: #75677b;
     font-size: 15px;
 }
+
 /* TABLE BOOKING */
 
 .booking {
-    padding: 100px 10%;
+    padding: 110px 10%;
     background: #eadcf1;
     text-align: center;
 }
@@ -404,6 +368,7 @@ nav a.active {
     margin-bottom: 30px;
     font-size: 16px;
 }
+
 /* FOOTER */
 
 .footer {
@@ -466,6 +431,7 @@ nav a.active {
     color: #d6c9df;
     font-size: 14px;
 }
+
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 900px) {
@@ -482,7 +448,7 @@ nav a.active {
     }
 
     .hero h1 {
-        font-size: 48px;
+        font-size: 52px;
     }
 
     .menu-container,
@@ -498,12 +464,12 @@ nav a.active {
 @media (max-width: 600px) {
 
     .hero {
-        min-height: 500px;
+        min-height: 520px;
         padding: 60px 7%;
     }
 
     .hero h1 {
-        font-size: 38px;
+        font-size: 40px;
     }
 
     .welcome h2,
@@ -526,6 +492,9 @@ nav a.active {
     nav a {
         font-size: 12px;
     }
-}
 
+    .logo {
+        font-size: 23px;
+    }
+}
 
