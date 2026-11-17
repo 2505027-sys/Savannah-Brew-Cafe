@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-/* GENERAL SETTINGS */
-
 * {
     margin: 0;
     padding: 0;
@@ -26,19 +24,16 @@ a {
 /* HEADER */
 
 .cafe-header {
-    width: 100%;
     padding: 20px 7%;
+    background: #432653;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #432653;
-    position: relative;
-    z-index: 10;
 }
 
 .logo {
-    color: white;
     font-family: 'Playfair Display', serif;
+    color: white;
     font-size: 24px;
     font-weight: 700;
 }
@@ -54,9 +49,8 @@ nav {
 
 nav a {
     color: white;
-    font-size: 14px;
     font-weight: 600;
-    transition: 0.3s;
+    font-size: 14px;
 }
 
 nav a:hover,
@@ -64,21 +58,19 @@ nav a.active {
     color: #e6c6f2;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero {
-    min-height: 480px;
+    min-height: 470px;
+    padding: 70px 8%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 70px 8%;
-    background:
-        linear-gradient(rgba(40, 20, 50, 0.65), rgba(40, 20, 50, 0.65)),
-        url("dao-vi-t-hoang-ETB3upjJttc-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
     color: white;
+    background:
+        linear-gradient(rgba(40,20,50,.65), rgba(40,20,50,.65)),
+        url("croissant.pn.png") center/cover no-repeat;
 }
 
 .hero-content {
@@ -86,17 +78,16 @@ nav a.active {
 }
 
 .hero-subtitle {
-    color: #d9b4e8;
-    font-size: 13px;
-    font-weight: 700;
+    color: #e6c6f2;
     letter-spacing: 3px;
-    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 13px;
 }
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 58px;
-    margin-bottom: 15px;
+    font-size: 55px;
+    margin: 15px 0;
 }
 
 .hero p {
@@ -109,29 +100,28 @@ nav a.active {
     display: inline-block;
     background: #74458a;
     color: white;
-    padding: 14px 30px;
+    padding: 13px 28px;
     border-radius: 30px;
+    margin-top: 20px;
     font-weight: 600;
-    margin-top: 22px;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .btn:hover {
     background: #432653;
-    transform: translateY(-3px);
 }
 
-/* GENERAL SECTION HEADINGS */
+/* SECTION HEADINGS */
 
 .section-heading {
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 .section-heading h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 38px;
     color: #432653;
+    font-size: 36px;
     margin: 10px 0;
 }
 
@@ -139,17 +129,17 @@ nav a.active {
     color: #705d78;
 }
 
-/* WELCOME SECTION */
+/* WELCOME */
 
 .welcome {
-    padding: 85px 10%;
+    padding: 80px 10%;
     text-align: center;
 }
 
 .welcome h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 38px;
     color: #432653;
+    font-size: 38px;
     margin-bottom: 20px;
 }
 
@@ -159,33 +149,28 @@ nav a.active {
     color: #65536b;
 }
 
-/* MENU SECTION */
+/* MENU */
 
 .featured-menu {
-    padding: 85px 8%;
+    padding: 80px 8%;
     background: #f5edf7;
 }
 
 .menu-container {
+    max-width: 1150px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    max-width: 1150px;
-    margin: auto;
 }
 
 .menu-card {
     background: white;
+    text-align: center;
     border-radius: 15px;
     overflow: hidden;
-    text-align: center;
     padding-bottom: 25px;
-    box-shadow: 0 5px 20px rgba(60, 30, 70, 0.08);
-    transition: 0.3s;
-}
-
-.menu-card:hover {
-    transform: translateY(-7px);
+    box-shadow: 0 5px 20px rgba(60,30,70,.08);
 }
 
 .menu-card img {
@@ -213,41 +198,34 @@ nav a.active {
     margin-top: 12px;
 }
 
-/* EXPERIENCE SECTION */
+/* EXPERIENCE */
 
 .experience {
-    padding: 100px 10%;
+    padding: 90px 10%;
     text-align: center;
-    background:
-        linear-gradient(rgba(48, 25, 58, 0.75), rgba(48, 25, 58, 0.75)),
-        url("croisants.png");
-    background-size: cover;
-    background-position: center;
     color: white;
+    background:
+        linear-gradient(rgba(48,25,58,.75), rgba(48,25,58,.75)),
+        url("croissant.pn.png") center/cover no-repeat;
 }
 
 .experience h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 40px;
+    font-size: 38px;
     margin-bottom: 15px;
 }
 
-.experience p {
-    max-width: 750px;
-    margin: auto;
-}
-
-/* WHY CHOOSE US */
+/* FEATURES */
 
 .why-choose-us {
-    padding: 85px 8%;
+    padding: 80px 8%;
     text-align: center;
 }
 
 .why-choose-us h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 38px;
     color: #432653;
+    font-size: 36px;
     margin-bottom: 35px;
 }
 
@@ -268,11 +246,7 @@ nav a.active {
     margin-bottom: 12px;
 }
 
-.feature-card p {
-    color: #705d78;
-}
-
-/* BOOKING SECTION */
+/* BOOKING */
 
 .booking {
     padding: 75px 8%;
@@ -283,15 +257,10 @@ nav a.active {
 
 .booking h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 38px;
-    margin-bottom: 12px;
+    font-size: 36px;
 }
 
-.booking p {
-    color: #eadcf0;
-}
-
-/* ABOUT PAGE */
+/* ABOUT */
 
 .about-content {
     max-width: 1100px;
@@ -311,26 +280,25 @@ nav a.active {
     margin-bottom: 25px;
 }
 
-/* GALLERY PAGE */
+/* GALLERY */
 
 .gallery-section {
     padding: 80px 8%;
-    background: #fffaf5;
 }
 
 .gallery-grid {
+    max-width: 1150px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    max-width: 1150px;
-    margin: auto;
 }
 
 .gallery-item {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(60, 30, 70, 0.08);
+    box-shadow: 0 5px 20px rgba(60,30,70,.08);
 }
 
 .gallery-item img {
@@ -338,11 +306,6 @@ nav a.active {
     height: 280px;
     object-fit: cover;
     display: block;
-    transition: 0.3s;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.04);
 }
 
 .gallery-item h3 {
@@ -352,11 +315,10 @@ nav a.active {
     font-family: 'Playfair Display', serif;
 }
 
-/* CONTACT PAGE */
+/* CONTACT */
 
 .contact-section {
     padding: 80px 8%;
-    background: #fffaf5;
 }
 
 .contact-container {
@@ -372,7 +334,6 @@ nav a.active {
     background: #f1e7f5;
     padding: 35px;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(60, 30, 70, 0.08);
 }
 
 .contact-details h3,
@@ -380,13 +341,12 @@ nav a.active {
     font-family: 'Playfair Display', serif;
     color: #432653;
     font-size: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .contact-details p {
     color: #594663;
-    line-height: 1.7;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .booking-form {
@@ -398,7 +358,6 @@ nav a.active {
 .booking-form label {
     color: #432653;
     font-weight: 600;
-    margin-top: 8px;
 }
 
 .booking-form input,
@@ -409,18 +368,12 @@ nav a.active {
     border: 1px solid #d3b8df;
     border-radius: 8px;
     background: white;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 15px;
-}
-
-.booking-form textarea {
-    resize: vertical;
+    font: inherit;
 }
 
 .booking-form .btn {
     border: none;
     cursor: pointer;
-    font-family: 'DM Sans', sans-serif;
 }
 
 /* FOOTER */
@@ -434,7 +387,6 @@ nav a.active {
 
 .footer h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 25px;
     margin-bottom: 12px;
 }
 
@@ -455,7 +407,6 @@ nav a.active {
     nav {
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
     }
 
     .menu-container,
@@ -470,10 +421,6 @@ nav a.active {
 }
 
 @media (max-width: 600px) {
-    .hero {
-        min-height: 380px;
-    }
-
     .hero h1 {
         font-size: 38px;
     }
@@ -485,18 +432,8 @@ nav a.active {
     }
 
     .welcome h2,
-    .section-heading h2,
-    .why-choose-us h2 {
+    .section-heading h2 {
         font-size: 30px;
-    }
-
-    .contact-section {
-        padding: 55px 5%;
-    }
-
-    .contact-details,
-    .booking-form {
-        padding: 25px;
     }
 }
 
